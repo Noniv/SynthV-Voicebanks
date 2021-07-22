@@ -1,0 +1,125 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Synthesizer V Voicebanks</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <header class="homepage">
+            <a href="index.html">
+                <img class="logo" src="img/synthv.svg" alt="synthv logo" />
+                <h1>Voicebanks</h1>
+            </a>
+        </header>
+
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li><a href="english.html">English</a></li>
+                    <li><a href="japanese.html">Japanese</a></li>
+                    <li><a href="chinese.html">Chinese</a></li>
+                </ul>
+            </div>
+        </nav>
+        <article>
+            <div class="content">
+                <header class="type">Standard</header>
+                <div class="voicebankrow">
+                    <div class="voicebank">
+                        <audio id="aiko" src="snd/aiko.mp3" preload="auto"></audio>
+                        <img
+                            src="img/aiko.png"
+                            alt="aiko"
+                            class="voicebankimg"
+                            onclick="var sounds = document.getElementsByTagName('audio'); for(i=0; i<sounds.length; i++) {sounds[i].pause(); sounds[i].currentTime = 0; } document.getElementById('aiko').play();"
+                        />
+                        <br />
+                        <h3>Aiko</h3>
+                    </div>
+                    <div class="voicebank">
+                        <audio id="cangqiong" src="snd/cangqiong.mp3" preload="auto"></audio>
+                        <img
+                            src="img/cangqiong.png"
+                            alt="cangqiong"
+                            class="voicebankimg"
+                            onclick="var sounds = document.getElementsByTagName('audio'); for(i=0; i<sounds.length; i++) {sounds[i].pause(); sounds[i].currentTime = 0; } document.getElementById('cangqiong').play();"
+                        />
+                        <br />
+                        <h3>Cangqiong</h3>
+                    </div>
+                    <div class="voicebank">
+                        <audio id="chiyu" src="snd/chiyu.mp3" preload="auto"></audio>
+                        <img
+                            src="img/chiyu.png"
+                            alt="chiyu"
+                            class="voicebankimg"
+                            onclick="var sounds = document.getElementsByTagName('audio'); for(i=0; i<sounds.length; i++) {sounds[i].pause(); sounds[i].currentTime = 0; } document.getElementById('chiyu').play();"
+                        />
+                        <br />
+                        <h3>Chiyu</h3>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+                <br /><br />
+                <div class="voicebankrow">
+                    <div class="voicebank">
+                        <audio id="minus" src="snd/minus.mp3" preload="auto"></audio>
+                        <img
+                            src="img/minus.png"
+                            alt="minus"
+                            class="voicebankimg"
+                            onclick="var sounds = document.getElementsByTagName('audio'); for(i=0; i<sounds.length; i++) {sounds[i].pause(); sounds[i].currentTime = 0; } document.getElementById('minus').play();"
+                        />
+                        <br />
+                        <h3>Minus</h3>
+                    </div>
+                    <div class="voicebank">
+                        <audio id="muxin" src="snd/muxin.mp3" preload="auto"></audio>
+                        <img
+                            src="img/muxin.png"
+                            alt="muxin"
+                            class="voicebankimg"
+                            onclick="var sounds = document.getElementsByTagName('audio'); for(i=0; i<sounds.length; i++) {sounds[i].pause(); sounds[i].currentTime = 0; } document.getElementById('muxin').play();"
+                        />
+                        <br />
+                        <h3>Muxin</h3>
+                    </div>
+                    <div class="voicebank">
+                        <audio id="shian" src="snd/shian.mp3" preload="auto"></audio>
+                        <img
+                            src="img/shian.png"
+                            alt="shian"
+                            class="voicebankimg"
+                            onclick="var sounds = document.getElementsByTagName('audio'); for(i=0; i<sounds.length; i++) {sounds[i].pause(); sounds[i].currentTime = 0; } document.getElementById('shian').play();"
+                        />
+                        <br />
+                        <h3>Shian</h3>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+                <br />
+                <br />
+                <div class="voicebankrow">
+                    <div class="voicebank"></div>
+                    <div class="voicebank">
+                        <audio id="haiyi" src="snd/haiyi.mp3" preload="auto"></audio>
+                        <img
+                            src="img/haiyi.png"
+                            alt="haiyi"
+                            class="voicebankimg"
+                            onclick="var sounds = document.getElementsByTagName('audio'); for(i=0; i<sounds.length; i++) {sounds[i].pause(); sounds[i].currentTime = 0; } document.getElementById('haiyi').play();"
+                        />
+                        <br />
+                        <h3>Haiyi</h3>
+                    </div>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+        </article>
+    </body>
+</html>

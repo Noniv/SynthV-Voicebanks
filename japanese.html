@@ -1,0 +1,122 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Synthesizer V Voicebanks</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <header class="homepage">
+            <a href="index.html">
+                <img class="logo" src="img/synthv.svg" alt="synthv logo" />
+                <h1>Voicebanks</h1>
+            </a>
+        </header>
+
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li><a href="english.html">English</a></li>
+                    <li><a href="japanese.html">Japanese</a></li>
+                    <li><a href="chinese.html">Chinese</a></li>
+                </ul>
+            </div>
+        </nav>
+        <article>
+            <div class="content">
+                <header class="type">Standard</header>
+                <div class="voicebankrow">
+                    <div class="voicebank">
+                        <audio id="genbu" src="snd/genbu.mp3" preload="auto"></audio>
+                        <img
+                            src="img/genbu.png"
+                            alt="genbu"
+                            class="voicebankimg"
+                            onclick="var sounds = document.getElementsByTagName('audio');
+                        for(i=0; i<sounds.length; i++) {sounds[i].pause(); sounds[i].currentTime = 0; }
+                        document.getElementById('genbu').play();"
+                        />
+                        <br />
+                        <h3>Genbu</h3>
+                    </div>
+                    <div class="voicebank">
+                        <audio id="kotonoha" src="snd/kotonoha.mp3" preload="auto"></audio>
+                        <img
+                            src="img/kotonoha.png"
+                            alt="kotonoha"
+                            class="voicebankimg"
+                            onclick="var sounds = document.getElementsByTagName('audio');
+                        for(i=0; i<sounds.length; i++) {sounds[i].pause(); sounds[i].currentTime = 0; }
+                        document.getElementById('kotonoha').play();"
+                        />
+                        <br />
+                        <h3>Kotonoha Akane & Aoi</h3>
+                    </div>
+                    <div class="voicebank">
+                        <audio id="renri" src="snd/renri.mp3" preload="auto"></audio>
+                        <img
+                            src="img/renri.png"
+                            alt="renri"
+                            class="voicebankimg"
+                            onclick="var sounds = document.getElementsByTagName('audio');
+                        for(i=0; i<sounds.length; i++) {sounds[i].pause(); sounds[i].currentTime = 0; }
+                        document.getElementById('renri').play();"
+                        />
+                        <br />
+                        <h3>Yamine Renri</h3>
+                    </div>
+
+                    <div style="clear: both"></div>
+                </div>
+
+                <header class="type">AI</header>
+                <div class="voicebankrow">
+                    <div class="voicebank">
+                        <audio id="rikka" src="snd/rikka.mp3" preload="auto"></audio>
+                        <img
+                            src="img/rikka.png"
+                            alt="rikka"
+                            class="voicebankimg"
+                            onclick="var sounds = document.getElementsByTagName('audio');
+                        for(i=0; i<sounds.length; i++) {sounds[i].pause(); sounds[i].currentTime = 0; }
+                        document.getElementById('rikka').play();"
+                        />
+                        <br />
+                        <h3>Koharu Rikka</h3>
+                    </div>
+                    <div class="voicebank">
+                        <audio id="saki" src="snd/saki.mp3" preload="auto"></audio>
+                        <img
+                            src="img/saki.png"
+                            alt="saki.png"
+                            class="voicebankimg"
+                            onclick="var sounds = document.getElementsByTagName('audio');
+                        for(i=0; i<sounds.length; i++) {sounds[i].pause(); sounds[i].currentTime = 0; }
+                        document.getElementById('saki').play();"
+                        />
+                        <br />
+                        <h3>Saki</h3>
+                    </div>
+                    <div class="voicebank">
+                        <audio id="makijp" src="snd/makijp.mp3" preload="auto"></audio>
+                        <img
+                            src="img/makijp.png"
+                            alt="makijp.png"
+                            class="voicebankimg"
+                            onclick="var sounds = document.getElementsByTagName('audio');
+                        for(i=0; i<sounds.length; i++) {sounds[i].pause(); sounds[i].currentTime = 0; }
+                        document.getElementById('makijp').play();"
+                        />
+                        <br />
+                        <h3>Tsurumaki Maki (JP)</h3>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+            </div>
+        </article>
+    </body>
+</html>

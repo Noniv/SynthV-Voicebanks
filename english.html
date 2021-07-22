@@ -1,0 +1,81 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Synthesizer V Voicebanks</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <header class="homepage">
+            <a href="index.html">
+                <img class="logo" src="img/synthv.svg" alt="synthv logo" />
+                <h1>Voicebanks</h1>
+            </a>
+        </header>
+
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li><a href="english.html">English</a></li>
+                    <li><a href="japanese.html">Japanese</a></li>
+                    <li><a href="chinese.html">Chinese</a></li>
+                </ul>
+            </div>
+        </nav>
+        <article>
+            <div class="content">
+                <header class="type">Standard</header>
+                <div class="voicebankrow">
+                    <div class="voicebank">
+                        <audio id="eleanor" src="snd/eleanor.mp3" preload="auto"></audio>
+                        <img
+                            src="img/eleanor.png"
+                            alt="eleanor"
+                            class="voicebankimg"
+                            onclick="var sounds = document.getElementsByTagName('audio');
+                        for(i=0; i<sounds.length; i++) {sounds[i].pause(); sounds[i].currentTime = 0; }
+                        document.getElementById('eleanor').play();"
+                        />
+                        <br />
+                        <h3>Eleanor Forte</h3>
+                    </div>
+                </div>
+
+                <header class="type">AI</header>
+                <div class="voicebankrow">
+                    <div class="voicebank">
+                        <audio id="solaria" src="snd/solaria.mp3" preload="auto"></audio>
+                        <img
+                            src="img/solaria.png"
+                            alt="solaria"
+                            class="voicebankimg"
+                            onclick="var sounds = document.getElementsByTagName('audio');
+                        for(i=0; i<sounds.length; i++) {sounds[i].pause(); sounds[i].currentTime = 0; }
+                        document.getElementById('solaria').play();"
+                        />
+                        <br />
+                        <h3>SOLARIA (not AI yet)</h3>
+                    </div>
+                    <div class="voicebank">
+                        <audio id="makieng" src="snd/makieng.mp3" preload="auto"></audio>
+                        <img
+                            src="img/makieng.png"
+                            alt="maki"
+                            class="voicebankimg"
+                            onclick="var sounds = document.getElementsByTagName('audio');
+                        for(i=0; i<sounds.length; i++) {sounds[i].pause(); sounds[i].currentTime = 0; }
+                        document.getElementById('makieng').play();"
+                        />
+                        <br />
+                        <h3>Tsurumaki Maki (ENG)</h3>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+            </div>
+        </article>
+    </body>
+</html>
