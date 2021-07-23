@@ -71,6 +71,8 @@ h1::first-letter {
 
 ul {
     padding: 0;
+    display: block;
+    min-width: 938px;
 }
 
 .content {
